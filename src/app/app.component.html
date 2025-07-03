@@ -1,0 +1,31 @@
+<!-- App Principal -->
+<div class="app-container">
+  <!-- Header de navegação -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+    <div class="container-fluid">
+      <div class="navbar-brand d-flex align-items-center">
+        <h2 class="mb-0 me-3">🚗 FIPE</h2>
+        <div class="input-group" style="width: 300px;">
+          <span class="input-group-text"><i class="bi bi-search"></i></span>
+          <input type="text" class="form-control" placeholder="Digite o nome do seu carro!">
+        </div>
+      </div>
+      <div class="navbar-nav ms-auto" style="gap: 10px;">
+        <a class="nav-link" routerLink="/boas-vindas" routerLinkActive="active">Boas-vindas</a>
+        <a class="nav-link" href="http://localhost:3000/health" target="_blank">Teste API</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo das rotas -->
+  <main class="main-content flex-grow-1">
+    <router-outlet></router-outlet>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer bg-light py-3 mt-auto">
+    <div class="container text-center">
+      <p class="mb-0">FIPE API Frontend - Angular 19 | Backend Express + Brasil API</p>
+    </div>
+  </footer>
+</div>
